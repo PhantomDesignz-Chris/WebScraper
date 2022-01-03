@@ -60,3 +60,5 @@ app.get('/news', (req, res) => {
 
 
 app.listen(PORT, () => console.log(`server running on http://localhost:${PORT}`))
+
+// testing updates any luck?
