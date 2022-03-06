@@ -2,11 +2,9 @@ const PORT = 3000
 const express = require('express')
 const cheerio = require('cheerio')
 const axios = require('axios')
-
 const app = express()
 
 // CHECK MULTIPLE SITES FOR NEWS LINKS
-
 const newsSites = [
       {
          name: 'Sporting News NHL',
@@ -46,13 +44,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/news', (req, res) => {
-
     res.json(articles)
-
 })
 
-
-
 app.listen(PORT, () => console.log(`server running on http://localhost:${PORT}`))
-
-// testing updates any luck?
